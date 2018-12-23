@@ -4,7 +4,7 @@
 #include "data_generation.h"
 
 TEST(TEST_BUCKET_SORT, RANDOM_TEST) {
-    size_t size = 100;
+    size_t size = 10;
     DataType lower_bound = INT32_MIN, upper_bound = INT32_MAX;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;

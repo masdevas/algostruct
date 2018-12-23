@@ -4,6 +4,9 @@
 #include <vector>
 #include <algorithm>
 
+#include "insertion_sort.h"
+#include "bubble_sort.h"
+
 template <typename Iterator, typename Comparator,
           typename ValueType = typename std::iterator_traits<Iterator>::value_type>
 void BucketSort(Iterator begin, Iterator end,
@@ -22,7 +25,7 @@ void BucketSort(Iterator begin, Iterator end,
         ++it;
     }
     for (auto& bucket : buckets) {
-        std::sort(bucket.begin(), bucket.end(), comparator);
+        InsertionSort(bucket.begin(), bucket.end(), comparator);
     }
     for (auto& bucket : buckets) {
         for (auto& element : bucket) {
