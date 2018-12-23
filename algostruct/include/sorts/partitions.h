@@ -2,11 +2,12 @@
 #define AACA_PARTITIONS_H
 
 #include <iterator>
+#include <iostream>
 
 #include "random_iterator.h"
 
 template <typename Iterator, typename Comparator, typename RandomGenerator>
-size_t LomutoPartition(Iterator begin, Iterator end, RandomGenerator& generator,
+Iterator LomutoPartition(Iterator begin, Iterator end, RandomGenerator& generator,
                        const Comparator& comparator) {
     Iterator iterator_middle = GenerateRandomIterator(begin, end, generator),
             current_parts_divider = begin;

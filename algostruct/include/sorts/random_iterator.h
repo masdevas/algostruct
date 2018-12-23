@@ -9,7 +9,7 @@ Iterator GenerateRandomIterator(Iterator lower_bound, Iterator upper_bound,
                                 RandomGenerator& generator) {
     auto distance = std::distance(lower_bound, upper_bound);
     std::uniform_int_distribution<typename std::iterator_traits<Iterator>::difference_type>
-            distribution(0, distance);
+            distribution(0, distance - 1);
     return lower_bound + distribution(generator);
 }
 

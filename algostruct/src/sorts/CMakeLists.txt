@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
 
-set(SRC_LIB_ALGOSTRUCT quick_sort_nonrec.cpp partitions.cpp)       #TODO create in src/
+set(SRC_LIB_ALGOSTRUCT quick_sort_nonrec.cpp partitions.cpp)
 add_library(libalgostruct SHARED ${SRC_LIB_ALGOSTRUCT})
 target_include_directories(libalgostruct PUBLIC ${MAIN_HEADERS})

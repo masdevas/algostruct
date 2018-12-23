@@ -35,11 +35,12 @@ void QuickSortNonRecursionCore(Iterator begin, Iterator end, RandomGenerator &ge
     }
 }
 
-template <typename Iterator, typename Comparator>
-void QuickSortNonRecursion(Iterator begin, Iterator end, const Comparator &comparator) {
+template <typename Iterator, typename Comparator, typename Partition>
+void QuickSortNonRecursion(Iterator begin, Iterator end, const Comparator &comparator,
+                           const Partition &partition) {
     std::random_device random_device;
     std::mt19937 generator(random_device());
-    QuickSortNonRecursionCore(begin, end, generator, comparator);
+    QuickSortNonRecursionCore(begin, end, generator, comparator, partition);
 }
 
 
