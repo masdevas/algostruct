@@ -18,7 +18,6 @@ TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_PARTITION) {
     EXPECT_EQ(data, copy_of_data);
 }
 
-
 TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_LOMUTO_PARTITION) {
     size_t size = 200;
     DataType lower_bound = -1000, upper_bound = 1000;

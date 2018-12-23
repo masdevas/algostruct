@@ -5,7 +5,7 @@
 #include "data_generation.h"
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {
-    size_t size = 200;
+    size_t size = 20000;
     DataType lower_bound = -1000, upper_bound = 1000;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
@@ -19,7 +19,7 @@ TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {
 }
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_LOMUTO_PARTITION) {
-    size_t size = 200;
+    size_t size = 20000;
     DataType lower_bound = -1000, upper_bound = 1000;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
