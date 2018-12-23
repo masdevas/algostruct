@@ -1,22 +1,25 @@
 cmake_minimum_required(VERSION 3.12)
 
-enable_testing()
 set(TEST_NAME TestQuickSortNonrec)
 add_executable(${TEST_NAME} quick_sort_nonrec.cpp data_generation.cpp)
 target_link_libraries(${TEST_NAME} gtest gtest_main pthread)
 target_include_directories(${TEST_NAME} PUBLIC ${GTEST_INCLUDE_DIRS} ${MAIN_HEADERS})
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
 
-enable_testing()
 set(TEST_NAME TestQuickSortEliminate)
 add_executable(${TEST_NAME} quick_sort_eliminate.cpp data_generation.cpp)
 target_link_libraries(${TEST_NAME} gtest gtest_main pthread)
 target_include_directories(${TEST_NAME} PUBLIC ${GTEST_INCLUDE_DIRS} ${MAIN_HEADERS})
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
 
-enable_testing()
 set(TEST_NAME TestTreeSort)
 add_executable(${TEST_NAME} tree_sort.cpp data_generation.cpp)
+target_link_libraries(${TEST_NAME} gtest gtest_main pthread)
+target_include_directories(${TEST_NAME} PUBLIC ${GTEST_INCLUDE_DIRS} ${MAIN_HEADERS})
+add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
+
+set(TEST_NAME TestBucketSort)
+add_executable(${TEST_NAME} bucket_sort.cpp data_generation.cpp)
 target_link_libraries(${TEST_NAME} gtest gtest_main pthread)
 target_include_directories(${TEST_NAME} PUBLIC ${GTEST_INCLUDE_DIRS} ${MAIN_HEADERS})
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
