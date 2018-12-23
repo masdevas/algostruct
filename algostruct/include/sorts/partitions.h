@@ -14,7 +14,7 @@ Iterator LomutoPartition(Iterator begin, Iterator end, RandomGenerator& generato
     typename std::iterator_traits<Iterator>::value_type middle_value =
             *iterator_middle;
     for (Iterator for_check = begin; for_check < end; ++for_check) {
-        if (comparator(*for_check, *middle_value)) {
+        if (comparator(*for_check, middle_value)) {
             std::swap(*for_check, *current_parts_divider);
             ++current_parts_divider;
         }
