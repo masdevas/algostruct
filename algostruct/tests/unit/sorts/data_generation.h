@@ -5,6 +5,7 @@
 #include <random>
 #include <vector>
 #include <functional>
+#include <string>
 
 using DataType = float;
 
@@ -40,4 +41,7 @@ std::vector<DataType> GenerateRandomVectorInt(size_t size, DataType lower_bound,
     }
     return res_vector;
 }
+
+std::vector<std::string> GenerateRandomStrings(size_t size, size_t count_symbols);
+
 #endif

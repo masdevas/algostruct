@@ -86,7 +86,7 @@ private:
 
     void SiftDown(size_t index) {
         size_t index_first_child = CountFirstChildIndex(index);
-        if (index_first_child > data_.size()) {
+        if (index_first_child >= data_.size()) {
             return;
         }
         size_t index_of_extremum = FindIndexOfExtremum(index, index_first_child);

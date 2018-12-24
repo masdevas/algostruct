@@ -5,11 +5,11 @@
 #include "data_generation.h"
 
 TEST(TEST_RADIX_SORT, RANDOM_TEST) {
-    size_t size = 1000;
-    using LocalDataType = uint16_t;
-    size_t max_value = UINT16_MAX;
-    using DataType = uint64_t;
-    DataType lower_bound = 0, upper_bound = UINT64_MAX;
+    size_t size = 1000000;
+    using LocalDataType = uint8_t;
+    size_t max_value = UINT8_MAX;
+    using DataType = uint32_t;
+    DataType lower_bound = 0, upper_bound = UINT32_MAX;
     auto data = GenerateRandomVectorInt(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {
