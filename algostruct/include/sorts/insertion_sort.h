@@ -2,6 +2,7 @@
 #define ALGOSTRUCT_INSERTION_SORT_H
 
 #include <utility>
+#include <algorithm>
 
 template <typename Iterator, typename Comparator>
 void InsertionSort(Iterator first, Iterator end, const Comparator& comparator) {
