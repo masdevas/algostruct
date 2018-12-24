@@ -6,7 +6,6 @@
 
 TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_PARTITION) {
     size_t size = 200;
-    DataType lower_bound = -1000, upper_bound = 1000;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {
@@ -20,7 +19,6 @@ TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_PARTITION) {
 
 TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_LOMUTO_PARTITION) {
     size_t size = 200;
-    DataType lower_bound = -1000, upper_bound = 1000;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {

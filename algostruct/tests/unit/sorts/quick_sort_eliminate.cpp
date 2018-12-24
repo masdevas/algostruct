@@ -6,7 +6,6 @@
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {
     size_t size = 1000000;
-    DataType lower_bound = INT32_MIN, upper_bound = INT32_MAX;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {
@@ -14,13 +13,12 @@ TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {
     };
     LocalPartition = Partition;
     QuickSortEliminate(data.begin(), data.end(), comp, LocalPartition);
-    //std::sort(copy_of_data.begin(), copy_of_data.end(), comp);
-    //EXPECT_EQ(data, copy_of_data);
+    std::sort(copy_of_data.begin(), copy_of_data.end(), comp);
+    EXPECT_EQ(data, copy_of_data);
 }
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_LOMUTO_PARTITION) {
     size_t size = 1000000;
-    DataType lower_bound = INT32_MIN, upper_bound = INT32_MAX;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {
@@ -28,6 +26,6 @@ TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_LOMUTO_PARTITION) {
     };
     LocalPartition = LomutoPartition;
     QuickSortEliminate(data.begin(), data.end(), comp, LocalPartition);
-    //std::sort(copy_of_data.begin(), copy_of_data.end(), comp);
-    //EXPECT_EQ(data, copy_of_data);
+    std::sort(copy_of_data.begin(), copy_of_data.end(), comp);
+    EXPECT_EQ(data, copy_of_data);
 }
