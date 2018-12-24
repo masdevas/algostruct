@@ -25,7 +25,7 @@ void BucketSort(Iterator begin, Iterator end,
         ++it;
     }
     for (auto& bucket : buckets) {
-        InsertionSort(bucket.begin(), bucket.end(), comparator);
+        std::sort(bucket.begin(), bucket.end(), comparator);
     }
     for (auto& bucket : buckets) {
         for (auto& element : bucket) {

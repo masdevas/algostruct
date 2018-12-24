@@ -6,7 +6,7 @@
 #include <vector>
 #include <functional>
 
-using DataType = int32_t;
+using DataType = int64_t;
 
 static std::vector<DataType>::iterator (*LocalPartition)(std::vector<DataType>::iterator,
                                                          std::vector<DataType>::iterator,

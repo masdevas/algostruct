@@ -3,8 +3,10 @@
 
 #include <vector>
 #include <iterator>
+#include <algorithm>
 
 #include "bubble_sort.h"
+#include "insertion_sort.h"
 
 template <typename Iterator>
 struct Part {
@@ -21,10 +23,10 @@ std::vector<Part<Iterator>> SortParts(std::vector<typename std::iterator_traits<
     for (size_t part_number = 0; part_number < count_parts - 1; ++part_number) {
         parts[part_number] = {buffer.begin() + size_of_part * part_number,
                               buffer.begin() + size_of_part * (part_number + 1)};
-        BubbleSort(parts[part_number].begin, parts[part_number].end, comparator);
+        std::sort(parts[part_number].begin, parts[part_number].end, comparator);
     }
     parts[count_parts - 1] = {buffer.begin() + size_of_part * (count_parts - 1), buffer.end()};
-    BubbleSort(parts[count_parts - 1].begin, parts[count_parts - 1].end, comparator);
+    std::sort(parts[count_parts - 1].begin, parts[count_parts - 1].end, comparator);
     return parts;
 }
 
@@ -56,6 +58,7 @@ void MergeParts(Iterator begin, Iterator end, std::vector<Part<Iterator>>& parts
         ++begin;
     }
 }
+
 template <typename Iterator, typename Comparator>
 void KMergeSort(Iterator begin, Iterator end, const Comparator& comparator, size_t count_parts) {
     std::vector<typename std::iterator_traits<Iterator>::value_type> buffer(

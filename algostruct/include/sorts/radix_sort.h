@@ -10,7 +10,7 @@ void RadixSort(Iterator begin, Iterator end, size_t count_digits, size_t count_v
     using ValueType = typename std::iterator_traits<Iterator>::value_type;
     size_t index_digit = 0;
     while (index_digit < count_digits) {
-        std::vector<std::vector<ValueType>> buckets(count_values);
+        std::vector<std::vector<ValueType>> buckets(static_cast<size_t>(count_values) + 1);
         Iterator it = begin;
         while (it != end) {
             auto val = extractor(*it, index_digit);

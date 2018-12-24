@@ -5,7 +5,7 @@
 #include "data_generation.h"
 
 TEST(TEST_BUBBLE_SORT, RANDOM_TEST) {
-    size_t size = 1000;
+    size_t size = 100000;
     DataType lower_bound = INT32_MIN, upper_bound = INT32_MAX;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
