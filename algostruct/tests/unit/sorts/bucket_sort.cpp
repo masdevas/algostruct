@@ -4,7 +4,8 @@
 #include "data_generation.h"
 
 TEST(TEST_BUCKET_SORT, RANDOM_TEST) {
-    size_t size = 100000;
+    size_t size = 1000;
+    
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {

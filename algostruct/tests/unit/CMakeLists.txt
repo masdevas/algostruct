@@ -4,3 +4,4 @@ find_package(GTest REQUIRED)
 enable_testing()
 
 add_subdirectory(sorts)
+add_subdirectory(structs)

@@ -4,7 +4,7 @@
 #include "data_generation.h"
 
 TEST(TEST_K_MERGE_SORT, RANDOM_TEST) {
-    size_t size = 100000;
+    size_t size = 1000;
     size_t count_parts = 100;
     auto data = GenerateRandomVector(size, lower_bound, upper_bound);
     auto copy_of_data = data;
@@ -17,7 +17,7 @@ TEST(TEST_K_MERGE_SORT, RANDOM_TEST) {
 }
 
 TEST(TEST_DHEAP_SORT, RANDOM_TEST_STRING) {
-    size_t size = 100000, count_symbols = 20;
+    size_t size = 1000, count_symbols = 20;
     size_t count_parts = 100;
     auto data = GenerateRandomStrings(size, count_symbols);
     auto copy_of_data = data;
