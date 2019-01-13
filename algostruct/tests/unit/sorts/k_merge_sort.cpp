@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include "sorts/k_merge_sort.h"
-#include "data_generation.h"
+#include "../data_generation/data_generation.h"
 
 TEST(TEST_K_MERGE_SORT, RANDOM_TEST) {
     size_t size = 1000;

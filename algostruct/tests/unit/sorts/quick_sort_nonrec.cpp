@@ -2,7 +2,7 @@
 #include <algorithm>
 #include "sorts/quick_sort_nonrec.h"
 #include "sorts/partitions.h"
-#include "data_generation.h"
+#include "../data_generation/data_generation.h"
 
 TEST(TEST_QUICK_SORT_NONREC, RANDOM_TEST_PARTITION) {
     size_t size = 200;

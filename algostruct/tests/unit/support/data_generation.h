@@ -6,7 +6,7 @@
 #include <vector>
 #include <functional>
 #include <string>
-
+/*
 using DataType = float;
 
 extern DataType lower_bound;
@@ -21,9 +21,10 @@ static std::vector<DataType>::iterator (*LocalPartition)(std::vector<DataType>::
 static std::vector<std::string>::iterator
 (*LocalStringPartition)(std::vector<std::string>::iterator,std::vector<std::string>::iterator,
                         std::mt19937&, const std::function<bool(const std::string&, const std::string&)>&);
+*/
 
 template <typename DataType>
-std::vector<DataType> GenerateRandomVector(size_t size, DataType lower_bound, DataType upper_bound) {
+std::vector<DataType> GenerateRandomVectorReal(size_t size, DataType lower_bound, DataType upper_bound) {
     std::random_device rnd;
     std::mt19937 generator(rnd());
     std::uniform_real_distribution<DataType> distribution(lower_bound, upper_bound);

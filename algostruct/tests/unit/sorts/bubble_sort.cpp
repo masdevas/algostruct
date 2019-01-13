@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <climits>
 #include "sorts/bubble_sort.h"
-#include "data_generation.h"
+#include "../data_generation/data_generation.h"
 
 TEST(TEST_BUBBLE_SORT, RANDOM_TEST) {
     size_t size = 1000;

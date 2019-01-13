@@ -1,9 +1,5 @@
 #include "data_generation.h"
 
-DataType lower_bound = -1000;
-DataType upper_bound = 1000;
-
-
 std::string GenerateRandomString(size_t size, std::mt19937& generator) {
     std::uniform_int_distribution<char> distribution('a', 'z');
     std::string res;

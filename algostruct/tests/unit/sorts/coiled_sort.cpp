@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include "sorts/coiled_sort.h"
-#include "data_generation.h"
+#include "../data_generation/data_generation.h"
 
 TEST(TEST_COILED_SORT, RANDOM_TEST) {
     size_t size = 1000000;
