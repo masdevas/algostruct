@@ -1,12 +1,14 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include "sorts/k_merge_sort.h"
-#include "../data_generation/data_generation.h"
+#include "../support/data_generation.h"
 
 TEST(TEST_K_MERGE_SORT, RANDOM_TEST) {
     size_t size = 1000;
     size_t count_parts = 100;
-    auto data = GenerateRandomVector(size, lower_bound, upper_bound);
+    using DataType = double;
+    double lower_bound = 0, upper_bound = 10000;
+    auto data = GenerateRandomVectorReal(size, lower_bound, upper_bound);
     auto copy_of_data = data;
     auto comp = [](const DataType& data_first, const DataType& data_second) {
         return data_first < data_second;
