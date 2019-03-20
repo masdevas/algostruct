@@ -17,5 +17,8 @@ function(create_test)
     add_test(NAME ${CREATE_TEST_TEST_NAME} COMMAND ${CREATE_TEST_TEST_NAME})
 endfunction()
 
+
+
 add_subdirectory(sorts)
 add_subdirectory(structs)
+add_subdirectory(search)
