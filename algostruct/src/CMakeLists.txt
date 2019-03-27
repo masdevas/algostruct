@@ -1,3 +1,3 @@
-file(GLOB_RECURSE CORE_SRC_SEARCH "*.cpp")
+file(GLOB_RECURSE CORE_SRC "*.cpp")
 
-add_library(libalgostruct STATIC ${CORE_SRC_SEARCH}) #${CORE_SRC_SORTS} ${CORE_SRC_STRUCTS})
+add_library(libalgostruct STATIC ${CORE_SRC})

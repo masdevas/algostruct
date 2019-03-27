@@ -7,9 +7,7 @@ enable_testing()
 set(SUPPORT_HEADERS ${PROJECT_SOURCE_DIR}/algostruct/tests/unit/support)
 
 function(create_test)
-    cmake_parse_arguments(CREATE_TEST "" "TEST_NAME" "SRC" ${ARGV})     #TODO what is ""?
-    #message("'TEST_NAME' = [${CREATE_TEST_TEST_NAME}]")
-    #message("'SRC' = [${CREATE_TEST_SRC}]")
+    cmake_parse_arguments(CREATE_TEST "" "TEST_NAME" "SRC" ${ARGV})
     add_executable(${CREATE_TEST_TEST_NAME} ${CREATE_TEST_SRC} ${SUPPORT_HEADERS}/data_generation.cpp)
     target_link_libraries(${CREATE_TEST_TEST_NAME} ${GTEST_BOTH_LIBRARIES} Threads::Threads)
     target_include_directories(${CREATE_TEST_TEST_NAME} PUBLIC
