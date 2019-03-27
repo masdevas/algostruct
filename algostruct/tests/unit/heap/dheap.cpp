@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <climits>
 #include <vector>
-#include "structs/dheap.h"
+#include "heap/dheap.h"
 #include "data_generation.h"
 
 TEST(TEST_DHEAP, SIMPLE_TESTS_INSERT_EXTRACT) {

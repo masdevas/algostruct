@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/insertion_sort.h"
+#include "sort/insertion_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_INSERTION_SORT, RANDOM_TEST) {

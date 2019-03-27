@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/quick_sort_eliminate.h"
-#include "sorts/partitions.h"
+#include "sort/quick_sort_eliminate.h"
+#include "sort/partitions.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {

@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/coiled_sort.h"
+#include "sort/coiled_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_COILED_SORT, RANDOM_TEST) {

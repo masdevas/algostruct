@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/k_merge_sort.h"
+#include "sort/k_merge_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_K_MERGE_SORT, RANDOM_TEST) {

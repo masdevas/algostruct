@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/count_sort.h"
+#include "sort/count_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_COUNT_SORT, RANDOM_TEST) {

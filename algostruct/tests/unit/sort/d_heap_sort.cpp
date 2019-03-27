@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/d_heap_sort.h"
+#include "sort/d_heap_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_DHEAP_SORT, RANDOM_TEST) {

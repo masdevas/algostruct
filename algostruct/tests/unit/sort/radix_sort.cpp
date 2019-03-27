@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include <climits>
-#include "sorts/radix_sort.h"
+#include "sort/radix_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_RADIX_SORT, RANDOM_TEST) {

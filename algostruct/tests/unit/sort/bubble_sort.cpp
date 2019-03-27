@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/bubble_sort.h"
+#include "sort/bubble_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_BUBBLE_SORT, RANDOM_TEST) {

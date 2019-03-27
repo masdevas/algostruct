@@ -1,2 +1,0 @@
-add_subdirectory(heap)
-add_subdirectory(tree_traverse)

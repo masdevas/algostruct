@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <struct/tree_traverse/TreeLCRS.h>
+#include <tree_traverse/TreeLCRS.h>
 #include <numeric>
 
 namespace algostruct {

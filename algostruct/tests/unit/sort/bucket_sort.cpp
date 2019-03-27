@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/bucket_sort.h"
+#include "sort/bucket_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_BUCKET_SORT, RANDOM_TEST) {

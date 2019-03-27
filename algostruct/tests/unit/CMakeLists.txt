@@ -18,7 +18,8 @@ function(create_test)
 endfunction()
 
 
-
-add_subdirectory(sort)
-add_subdirectory(struct)
+add_subdirectory(heap)
 add_subdirectory(search)
+add_subdirectory(sort)
+add_subdirectory(tree_traverse)
+

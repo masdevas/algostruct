@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <algorithm>
-#include "sorts/tree_sort.h"
+#include "sort/tree_sort.h"
 #include "../support/data_generation.h"
 
 TEST(TEST_TREE_SORT, RANDOM_TEST) {
