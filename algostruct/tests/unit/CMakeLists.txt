@@ -19,6 +19,6 @@ endfunction()
 
 
 
-add_subdirectory(sorts)
-add_subdirectory(structs)
+add_subdirectory(sort)
+add_subdirectory(struct)
 add_subdirectory(search)
