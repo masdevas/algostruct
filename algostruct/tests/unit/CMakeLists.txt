@@ -15,7 +15,6 @@ function(create_test)
     add_test(NAME ${CREATE_TEST_TEST_NAME} COMMAND ${CREATE_TEST_TEST_NAME})
 endfunction()
 
-
 add_subdirectory(heap)
 add_subdirectory(search)
 add_subdirectory(sort)

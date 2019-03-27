@@ -1,1 +1,1 @@
-create_test(TEST_NAME Struct_DHeapTest SRC dheap.cpp)
+create_test(TEST_NAME Heap_DHeap SRC dheap.cpp)
