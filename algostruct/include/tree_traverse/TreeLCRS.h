@@ -2,7 +2,7 @@
 #define ALGOSTRUCT_TREELCRS_H
 
 /*
- * Tree Left-Child Right-Sibling. Only constructive, not changeable.
+ * Tree Left-Child Right-Sibling. Only constructive, not changeable. (Cormen)
  */
 namespace algostruct {
     template<typename Data>
