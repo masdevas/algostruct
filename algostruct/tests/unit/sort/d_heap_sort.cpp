@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include "sort/d_heap_sort.h"
-#include "../support/data_generation.h"
+#include "data_generation.h"
 
 TEST(TEST_DHEAP_SORT, RANDOM_TEST) {
     size_t size = 1000;

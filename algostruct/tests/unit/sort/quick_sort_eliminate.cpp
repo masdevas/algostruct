@@ -2,7 +2,7 @@
 #include <algorithm>
 #include "sort/quick_sort_eliminate.h"
 #include "sort/partitions.h"
-#include "../support/data_generation.h"
+#include "data_generation.h"
 
 TEST(TEST_QUICK_SORT_ELIMINATE, RANDOM_TEST_PARTITION) {
     size_t size = 100;

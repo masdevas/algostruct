@@ -6,14 +6,7 @@ enable_testing()
 
 set(SUPPORT_HEADERS ${PROJECT_SOURCE_DIR}/algostruct/tests/unit/support)
 
-function(create_test)
-    cmake_parse_arguments(CREATE_TEST "" "TEST_NAME" "SRC" ${ARGV})
-    add_executable(${CREATE_TEST_TEST_NAME} ${CREATE_TEST_SRC} ${SUPPORT_HEADERS}/data_generation.cpp)
-    target_link_libraries(${CREATE_TEST_TEST_NAME} ${GTEST_BOTH_LIBRARIES} Threads::Threads)
-    target_include_directories(${CREATE_TEST_TEST_NAME} PUBLIC
-            ${GTEST_INCLUDE_DIRS} ${MAIN_HEADERS} ${SUPPORT_HEADERS})
-    add_test(NAME ${CREATE_TEST_TEST_NAME} COMMAND ${CREATE_TEST_TEST_NAME})
-endfunction()
+include(AlgostructUnitTest)
 
 add_subdirectory(heap)
 add_subdirectory(search)

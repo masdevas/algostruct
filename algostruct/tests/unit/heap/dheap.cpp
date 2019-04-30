@@ -3,7 +3,7 @@
 #include <climits>
 #include <vector>
 #include "heap/dheap.h"
-#include "data_generation.h"
+#include "../sort/data_generation.h"
 
 TEST(TEST_DHEAP, SIMPLE_TESTS_INSERT_EXTRACT) {
     {

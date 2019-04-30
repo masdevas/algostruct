@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <climits>
 #include "sort/radix_sort.h"
-#include "../support/data_generation.h"
+#include "data_generation.h"
 
 TEST(TEST_RADIX_SORT, RANDOM_TEST) {
     size_t size = 1000000;

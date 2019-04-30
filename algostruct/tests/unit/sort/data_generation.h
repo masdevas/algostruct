@@ -7,14 +7,6 @@
 #include <functional>
 #include <string>
 
-/*
-using DataType = float;
-
-extern DataType lower_bound;
-extern DataType upper_bound;
-*/
-
-
 static std::vector<std::string>::iterator
 (*LocalStringPartition)(std::vector<std::string>::iterator,std::vector<std::string>::iterator,
                         std::mt19937&, const std::function<bool(const std::string&, const std::string&)>&);

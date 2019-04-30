@@ -1,1 +1,1 @@
-create_test(TEST_NAME Heap_DHeap SRC dheap.cpp)
+create_algostruct_unit_test(NAME Heap_DHeap SRC_TEST dheap.cpp)

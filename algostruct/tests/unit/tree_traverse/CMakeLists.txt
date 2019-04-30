@@ -1,1 +1,1 @@
-create_test(TEST_NAME TreeTraverse_LCRS SRC ${MAIN_SRCS}/tree_traverse/TreeLCRS.cpp TreeLCRS.cpp)
+create_algostruct_unit_test(NAME TreeTraverse_LCRS SRC_TEST TreeLCRS.cpp SRC_CORE TreeLCRS.cpp)

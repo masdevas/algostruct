@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "data_generation.h"
+#include "../sort/data_generation.h"
 #include <search/binary.h>
 #include <algorithm>
 
